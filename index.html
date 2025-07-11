@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Colinas del Arroyo II - Plan de Gobierno 2025-2027</title>
+    <meta name="title" content="Colinas del Arroyo II - Plan de Gobierno 2025-2027">
+    <meta name="description" content="Plan de Gobierno para la Junta de Vecinos Colinas del Arroyo II. Vivir juntos, crecer unidos.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://colinasdelarroyo.com/">
+    <meta property="og:title" content="Colinas del Arroyo II - Plan de Gobierno 2025-2027">
+    <meta property="og:description" content="Plan de Gobierno para la Junta de Vecinos Colinas del Arroyo II. Vivir juntos, crecer unidos.">
+    <meta property="og:image" content="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image-1200x630.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://colinasdelarroyo.com/">
+    <meta property="twitter:title" content="Colinas del Arroyo II - Plan de Gobierno 2025-2027">
+    <meta property="twitter:description" content="Plan de Gobierno para la Junta de Vecinos Colinas del Arroyo II. Vivir juntos, crecer unidos.">
+    <meta property="twitter:image" content="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image-1200x630.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-main {
+            background-color: #2563EB; /* Equivalent to blue-600 */
+        }
+        .text-main {
+            color: #2563EB;
+        }
+        .bg-accent {
+            background-color: #F97316; /* Equivalent to orange-500 */
+        }
+        .text-accent {
+            color: #F97316;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB; /* gray-200 */
+        }
+        .timeline-item .timeline-dot {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 9999px;
+            border: 2px solid white;
+        }
+        @media (min-width: 768px) {
+            .timeline::before {
+                left: 2.5rem; /* Corresponds to w-10 */
+                transform: translateX(0);
+            }
+            .timeline-item .timeline-dot {
+                left: 2.5rem;
+            }
+            .timeline-item {
+                padding-left: 5rem; /* w-20 */
+                padding-right: 0;
+            }
+             .timeline-item:nth-child(even) {
+                padding-left: 5rem;
+                padding-right: 0;
+            }
+            .timeline-item .timeline-content {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i data-lucide="home" class="text-accent"></i>
+                <h1 class="text-xl font-bold text-main">Colinas del Arroyo II</h1>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#inicio" class="text-gray-600 hover:text-main">Inicio</a>
+                <a href="#mision" class="text-gray-600 hover:text-main">Misión</a>
+                <a href="#pilares" class="text-gray-600 hover:text-main">Pilares</a>
+                <a href="#cronograma" class="text-gray-600 hover:text-main">Cronograma</a>
+                <a href="#plan-financiero" class="text-gray-600 hover:text-main">Plan Financiero</a>
+                <a href="#contacto" class="text-gray-600 hover:text-main">Contacto</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
+            <a href="#inicio" class="block py-2 text-gray-600 hover:text-main">Inicio</a>
+            <a href="#mision" class="block py-2 text-gray-600 hover:text-main">Misión</a>
+            <a href="#pilares" class="block py-2 text-gray-600 hover:text-main">Pilares</a>
+            <a href="#cronograma" class="block py-2 text-gray-600 hover:text-main">Cronograma</a>
+            <a href="#plan-financiero" class="block py-2 text-gray-600 hover:text-main">Plan Financiero</a>
+            <a href="#contacto" class="block py-2 text-gray-600 hover:text-main">Contacto</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="bg-main text-white text-center py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-6xl font-extrabold leading-tight">Plan de Gobierno</h2>
+                <p class="text-4xl md:text-6xl font-extrabold text-accent mb-4">2025-2027</p>
+                <p class="text-lg md:text-xl mb-8">Junta de Vecinos Colinas del Arroyo II</p>
+                <div class="bg-blue-500/50 rounded-lg p-8 max-w-2xl mx-auto mb-10">
+                    <p class="text-3xl md:text-4xl font-bold">"Vivir juntos, crecer unidos"</p>
+                    <p class="mt-2 text-lg">Un nuevo horizonte para nuestra comunidad</p>
+                </div>
+                <div class="flex justify-center space-x-4">
+                    <a href="#pilares" class="bg-accent hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300">Conocer el Plan</a>
+                    <a href="#contacto" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-8 rounded-lg transition duration-300 border border-blue-400">Contactar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuestros Fundamentos Section -->
+        <section id="mision" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800">Nuestros Fundamentos</h2>
+                    <p class="text-gray-600 mt-2">Los pilares que guían nuestro compromiso con la comunidad</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Misión -->
+                    <div class="bg-blue-50 border border-blue-200 rounded-xl p-8 text-center shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-6">
+                            <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-main">
+                                <i data-lucide="target" class="text-white"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Misión</h3>
+                        <p class="text-gray-600">Somos una organización vecinal comprometida con el desarrollo integral y armónico de Colinas del Arroyo II, que trabaja para garantizar la seguridad, la convivencia pacífica y el bienestar de todos sus residentes, mediante una gestión transparente, participativa y eficiente de los recursos comunitarios.</p>
+                    </div>
+                    <!-- Visión -->
+                    <div class="bg-green-50 border border-green-200 rounded-xl p-8 text-center shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mb-6">
+                             <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-green-500">
+                                <i data-lucide="eye" class="text-white"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Visión</h3>
+                        <p class="text-gray-600">Para 2026, Colinas del Arroyo II será reconocida como una urbanización modelo en Santo Domingo Norte, destacada por su seguridad, orden, limpieza y calidad de vida, donde sus residentes disfrutan de espacios públicos bien mantenidos, servicios eficientes y una sólida cohesión comunitaria, respaldada por una gestión vecinal moderna, transparente y participativa.</p>
+                    </div>
+                    <!-- Valores -->
+                    <div class="bg-orange-50 border border-orange-200 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-orange-100 mb-6 mx-auto">
+                            <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent">
+                                <i data-lucide="heart" class="text-white"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-center">Valores</h3>
+                        <ul class="space-y-2 text-left">
+                            <li class="flex items-start"><i data-lucide="check" class="text-accent w-5 h-5 mr-2 flex-shrink-0 mt-1"></i>Justicia Social</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-accent w-5 h-5 mr-2 flex-shrink-0 mt-1"></i>Respeto Mutuo</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-accent w-5 h-5 mr-2 flex-shrink-0 mt-1"></i>Participación Democrática</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-accent w-5 h-5 mr-2 flex-shrink-0 mt-1"></i>Solidaridad</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-accent w-5 h-5 mr-2 flex-shrink-0 mt-1"></i>Transparencia</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-accent w-5 h-5 mr-2 flex-shrink-0 mt-1"></i>Honestidad</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-accent w-5 h-5 mr-2 flex-shrink-0 mt-1"></i>Vocación de Servicio</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-accent w-5 h-5 mr-2 flex-shrink-0 mt-1"></i>Amor al Prójimo</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-accent w-5 h-5 mr-2 flex-shrink-0 mt-1"></i>Igualdad</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-accent w-5 h-5 mr-2 flex-shrink-0 mt-1"></i>Identidad Cultural</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-accent w-5 h-5 mr-2 flex-shrink-0 mt-1"></i>Trabajo en Equipo</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-accent w-5 h-5 mr-2 flex-shrink-0 mt-1"></i>Compañerismo</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-accent w-5 h-5 mr-2 flex-shrink-0 mt-1"></i>Respeto a los Derechos Humanos</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-accent w-5 h-5 mr-2 flex-shrink-0 mt-1"></i>Respeto a la Naturaleza</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pilares Estratégicos Section -->
+        <section id="pilares" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800">Pilares Estratégicos</h2>
+                    <p class="text-gray-600 mt-2">Nuestro plan de trabajo se fundamenta en seis pilares estratégicos que transformarán nuestra comunidad</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Pillar 1 -->
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-red-500 flex items-center justify-center mr-4">
+                               <i data-lucide="shield" class="text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Seguridad y Control de Accesos</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4 text-sm">La seguridad es la base fundamental para el bienestar de nuestra comunidad.</p>
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Control biométrico en accesos principales (Jacobo Majluta y Guaricano)</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Sistema integrado de vigilancia 24/7</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Patrullaje coordinado con la Policía Nacional</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Cierre de accesos irregulares y control perimetral</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Protocolos de emergencia y respuesta</li>
+                        </ul>
+                    </div>
+                     <!-- Pillar 2 -->
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center mr-4">
+                               <i data-lucide="wrench" class="text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Infraestructura y Servicios</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4 text-sm">Un entorno bien mantenido refleja el orgullo de sus habitantes.</p>
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Programa de mantenimiento vial preventivo</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Sistema de iluminación con energía solar</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Optimización del sistema de drenaje pluvial</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Señalización vial y nomenclatura</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Mobiliario urbano y paradas de transporte</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Ciclovías y espacios deportivos</li>
+                        </ul>
+                    </div>
+                     <!-- Pillar 3 -->
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center mr-4">
+                               <i data-lucide="trending-up" class="text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Gestión Administrativa y Financiera</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4 text-sm">La transparencia y eficiencia en el manejo de recursos es nuestro compromiso.</p>
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Sistema automatizado de cuotas (RD$330 + cuota extraordinaria temporal)</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Portal web para pagos y gestiones</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Presupuesto participativo</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Sistema de transparencia y rendición de cuentas</li>
+                             <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Censo actualizado de residentes</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Alianzas estratégicas con instituciones</li>
+                        </ul>
+                    </div>
+                     <!-- Pillar 4 -->
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center mr-4">
+                               <i data-lucide="scale" class="text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Marco Legal y Normativo</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4 text-sm">El orden y la buena convivencia requieren reglas claras y justas.</p>
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Actualización de estatutos a los nuevos tiempos</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Implementación del nuevo reglamento para constructoras</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Reglamento de establecimientos comerciales</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Reglamento de mantención de solares y áreas verdes</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Régimen de consecuencias efectivo</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Sistema de resolución de conflictos</li>
+                        </ul>
+                    </div>
+                     <!-- Pillar 5 -->
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-indigo-500 flex items-center justify-center mr-4">
+                               <i data-lucide="users" class="text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Convivencia y Participación</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4 text-sm">La fortaleza de una comunidad reside en la participación de sus miembros.</p>
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Programa de integración comunitaria</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Sistema de comunicación multicanal</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Mecanismos de participación vecinal</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Actividades sociales y culturales</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Programa de apadrinamiento de áreas verdes</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Coordinación con instituciones educativas</li>
+                        </ul>
+                    </div>
+                     <!-- Pillar 6 -->
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center mr-4">
+                               <i data-lucide="leaf" class="text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Medio Ambiente y Espacios Públicos</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4 text-sm">Un ambiente limpio y espacios públicos bien mantenidos son esenciales.</p>
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Sistema integral de gestión de residuos</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Programa de mantenimiento de áreas verdes</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Desarrollo de espacios recreativos</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Control de contaminación sonora</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Programa de educación ambiental</li>
+                            <li class="flex items-start"><i data-lucide="check" class="text-green-500 w-4 h-4 mr-2 flex-shrink-0 mt-1"></i>Gestión de aguas pluviales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cronograma de Implementación Section -->
+        <section id="cronograma" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800">Cronograma de Implementación</h2>
+                    <p class="text-gray-600 mt-2">Nuestro plan de trabajo iniciará en el tercer trimestre de 2025</p>
+                </div>
+                <div class="relative max-w-4xl mx-auto">
+                    <div class="absolute w-1 bg-gray-200 h-full left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 md:ml-4"></div>
+                    <div class="space-y-16">
+                        <!-- Timeline Item 1 -->
+                        <div class="relative md:pl-16">
+                            <div class="absolute top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-blue-500 border-4 border-white left-1/2 -translate-x-1/2 md:left-0"></div>
+                            <div class="md:ml-10 bg-white p-6 rounded-lg shadow-md border border-gray-200 text-center md:text-left">
+                                <h3 class="text-2xl font-bold">Q3 2025</h3>
+                                <p class="text-lg font-semibold mb-2">Fase 1: Establecimiento</p>
+                                <p class="text-gray-500 text-sm">Julio - Septiembre 2025</p>
+                                <p class="text-blue-600 font-semibold my-2">Presupuesto: RD$ 2,000,000</p>
+                                <ul class="text-left text-sm text-gray-600 list-disc list-inside space-y-1">
+                                    <li>Implementación del sistema de recaudación</li>
+                                    <li>Cambio de partícipes autorizadores en cuenta bancaria</li>
+                                    <li>Establecimiento de controles financieros</li>
+                                    <li>Instalación de sistemas de seguridad básicos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Timeline Item 2 -->
+                         <div class="relative md:pl-16">
+                            <div class="absolute top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-green-500 border-4 border-white left-1/2 -translate-x-1/2 md:left-0"></div>
+                            <div class="md:ml-10 bg-white p-6 rounded-lg shadow-md border border-gray-200 text-center md:text-left">
+                                <h3 class="text-2xl font-bold">Q4 2025</h3>
+                                <p class="text-lg font-semibold mb-2">Fase 2: Desarrollo</p>
+                                <p class="text-gray-500 text-sm">Octubre - Diciembre 2025</p>
+                                <p class="text-blue-600 font-semibold my-2">Presupuesto: RD$ 3,000,000</p>
+                                <ul class="text-left text-sm text-gray-600 list-disc list-inside space-y-1">
+                                    <li>Inversiones en seguridad completa</li>
+                                    <li>Mejoras de infraestructura crítica</li>
+                                    <li>Inicio de programas comunitarios</li>
+                                    <li>Implementación de control biométrico</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Timeline Item 3 -->
+                         <div class="relative md:pl-16">
+                            <div class="absolute top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-orange-500 border-4 border-white left-1/2 -translate-x-1/2 md:left-0"></div>
+                            <div class="md:ml-10 bg-white p-6 rounded-lg shadow-md border border-gray-200 text-center md:text-left">
+                                <h3 class="text-2xl font-bold">Q1 2026</h3>
+                                <p class="text-lg font-semibold mb-2">Fase 3: Consolidación</p>
+                                <p class="text-gray-500 text-sm">Enero - Marzo 2026</p>
+                                <p class="text-blue-600 font-semibold my-2">Presupuesto: RD$ 2,500,000</p>
+                                <ul class="text-left text-sm text-gray-600 list-disc list-inside space-y-1">
+                                    <li>Ampliación de servicios</li>
+                                    <li>Mejoras adicionales en infraestructura</li>
+                                    <li>Programas de mantenimiento preventivo</li>
+                                    <li>Evaluación de resultados parciales</li>
+                                </ul>
+                            </div>
+                        </div>
+                         <!-- Timeline Item 4 -->
+                         <div class="relative md:pl-16">
+                            <div class="absolute top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-purple-500 border-4 border-white left-1/2 -translate-x-1/2 md:left-0"></div>
+                            <div class="md:ml-10 bg-white p-6 rounded-lg shadow-md border border-gray-200 text-center md:text-left">
+                                <h3 class="text-2xl font-bold">Q2 2026</h3>
+                                <p class="text-lg font-semibold mb-2">Fase 4: Optimización</p>
+                                <p class="text-gray-500 text-sm">Abril - Junio 2026</p>
+                                <p class="text-blue-600 font-semibold my-2">Presupuesto: RD$ 2,000,000</p>
+                                <ul class="text-left text-sm text-gray-600 list-disc list-inside space-y-1">
+                                    <li>Evaluación integral y ajustes</li>
+                                    <li>Inversiones complementarias</li>
+                                    <li>Planificación del siguiente año</li>
+                                    <li>Consolidación de logros</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plan Financiero Section -->
+        <section id="plan-financiero" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800">Plan Financiero</h2>
+                    <p class="text-gray-600 mt-2">Gestión transparente y eficiente de los recursos comunitarios</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                    <!-- Estructura de Ingresos -->
+                    <div class="bg-gray-50 rounded-xl p-8 border border-gray-200">
+                        <h3 class="text-2xl font-bold mb-6">Estructura de Ingresos</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center bg-blue-100 p-4 rounded-lg">
+                                <span class="font-medium">Cuota Mensual Regular</span>
+                                <span class="font-bold text-blue-600">RD$ 330</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-orange-100 p-4 rounded-lg">
+                                <span class="font-medium">Unidades Habitacionales</span>
+                                <span class="font-bold text-orange-600">3000</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-green-100 p-4 rounded-lg">
+                                <span class="font-medium">Ingresos Anuales Proyectados</span>
+                                <span class="font-bold text-green-600">RD$ 7,276,500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Distribución del Presupuesto -->
+                    <div class="bg-gray-50 rounded-xl p-8 border border-gray-200">
+                        <h3 class="text-2xl font-bold mb-6">Distribución del Presupuesto</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 rounded-full bg-red-500 mr-3"></div>
+                                <span class="flex-1">Seguridad</span>
+                                <span class="font-bold">35%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-red-500 h-2.5 rounded-full" style="width: 35%"></div>
+                            </div>
+
+                            <div class="flex items-center mt-4">
+                                <div class="w-4 h-4 rounded-full bg-blue-500 mr-3"></div>
+                                <span class="flex-1">Infraestructura</span>
+                                <span class="font-bold">25%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-500 h-2.5 rounded-full" style="width: 25%"></div>
+                            </div>
+
+                            <div class="flex items-center mt-4">
+                                <div class="w-4 h-4 rounded-full bg-green-500 mr-3"></div>
+                                <span class="flex-1">Administración</span>
+                                <span class="font-bold">20%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-green-500 h-2.5 rounded-full" style="width: 20%"></div>
+                            </div>
+
+                            <div class="flex items-center mt-4">
+                                <div class="w-4 h-4 rounded-full bg-purple-500 mr-3"></div>
+                                <span class="flex-1">Medio Ambiente</span>
+                                <span class="font-bold">10%</span>
+                            </div>
+                             <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-purple-500 h-2.5 rounded-full" style="width: 10%"></div>
+                            </div>
+
+                             <div class="flex items-center mt-4">
+                                <div class="w-4 h-4 rounded-full bg-pink-500 mr-3"></div>
+                                <span class="flex-1">Programas Comunitarios</span>
+                                <span class="font-bold">5%</span>
+                            </div>
+                             <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-pink-500 h-2.5 rounded-full" style="width: 5%"></div>
+                            </div>
+                            
+                             <div class="flex items-center mt-4">
+                                <div class="w-4 h-4 rounded-full bg-gray-500 mr-3"></div>
+                                <span class="flex-1">Fondo de Reserva</span>
+                                <span class="font-bold">5%</span>
+                            </div>
+                             <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-gray-500 h-2.5 rounded-full" style="width: 5%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Presupuesto Detallado Anual -->
+                <div class="mt-12 max-w-6xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="bg-main text-white px-6 py-4">
+                        <h3 class="text-2xl font-bold">Presupuesto Detallado Anual</h3>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="p-4 font-semibold text-gray-600">CATEGORÍA</th>
+                                    <th class="p-4 font-semibold text-gray-600">PRESUPUESTO ANUAL</th>
+                                    <th class="p-4 font-semibold text-gray-600">MENSUAL</th>
+                                    <th class="p-4 font-semibold text-gray-600">% DEL TOTAL</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="p-4 font-medium">Seguridad</td>
+                                    <td class="p-4">RD$ 4,200,000</td>
+                                    <td class="p-4">RD$ 350,000</td>
+                                    <td class="p-4">35%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 font-medium">Infraestructura</td>
+                                    <td class="p-4">RD$ 2,800,000</td>
+                                    <td class="p-4">RD$ 233,333</td>
+                                    <td class="p-4">25%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 font-medium">Administración</td>
+                                    <td class="p-4">RD$ 1,620,000</td>
+                                    <td class="p-4">RD$ 135,000</td>
+                                    <td class="p-4">20%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 font-medium">Medio Ambiente</td>
+                                    <td class="p-4">RD$ 920,000</td>
+                                    <td class="p-4">RD$ 76,667</td>
+                                    <td class="p-4">10%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 font-medium">Programas Comunitarios</td>
+                                    <td class="p-4">RD$ 460,000</td>
+                                    <td class="p-4">RD$ 38,333</td>
+                                    <td class="p-4">5%</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 font-medium">Fondo de Reserva</td>
+                                    <td class="p-4">RD$ 460,000</td>
+                                    <td class="p-4">RD$ 38,333</td>
+                                    <td class="p-4">5%</td>
+                                </tr>
+                            </tbody>
+                            <tfoot class="bg-blue-50">
+                                <tr class="font-bold">
+                                    <td class="p-4">TOTAL</td>
+                                    <td class="p-4">RD$ 10,460,000</td>
+                                    <td class="p-4">RD$ 871,666</td>
+                                    <td class="p-4">100%</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Compromiso de Transparencia -->
+                <div class="mt-12 max-w-6xl mx-auto bg-white rounded-xl shadow-md p-8 border border-gray-200">
+                    <h3 class="text-2xl font-bold text-center mb-4">Compromiso de Transparencia</h3>
+                    <p class="text-center text-gray-600">Implementaremos un sistema de transparencia total donde cada peso invertido será reportado mensualmente a través de nuestro portal web. Los residentes tendrán acceso completo a informes financieros detallados, estados de cuenta y progreso de inversiones.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section id="contacto" class="bg-main text-white py-20">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold">Contáctanos</h2>
+                    <p class="mt-2 text-blue-200">Estamos aquí para escuchar tus inquietudes y trabajar juntos por nuestra comunidad</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                    <!-- Información de Contacto -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Información de Contacto</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center mr-4">
+                                    <i data-lucide="user" class="text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold">Jonathan Valle</p>
+                                    <p class="text-blue-200">Coordinador de Campaña</p>
+                                </div>
+                            </div>
+                             <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center mr-4">
+                                    <i data-lucide="phone" class="text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold">Teléfono</p>
+                                    <a href="tel:+18295341802" class="text-blue-200 hover:text-white">+1 (829) 534-1802</a>
+                                </div>
+                            </div>
+                             <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center mr-4">
+                                    <i data-lucide="mail" class="text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold">Correo Electrónico</p>
+                                    <a href="mailto:jvalle@ovm-consulting.com" class="text-blue-200 hover:text-white">jvalle@ovm-consulting.com</a>
+                                </div>
+                            </div>
+                             <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center mr-4">
+                                    <i data-lucide="map-pin" class="text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold">Ubicación</p>
+                                    <p class="text-blue-200">Colinas del Arroyo II<br>Santo Domingo Norte</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Formulario de Contacto -->
+                    <div class="bg-blue-500/80 p-8 rounded-lg">
+                        <h3 class="text-2xl font-bold mb-6">Envíanos un Mensaje</h3>
+                        <form id="contactForm">
+                            <div class="mb-4">
+                                <label for="name" class="block mb-2 text-sm font-medium">Nombre Completo</label>
+                                <input type="text" id="name" name="name" placeholder="Tu nombre completo" class="w-full bg-blue-400/50 border border-blue-400 rounded-lg p-3 placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white" required>
+                            </div>
+                             <div class="mb-4">
+                                <label for="email" class="block mb-2 text-sm font-medium">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" placeholder="tu@email.com" class="w-full bg-blue-400/50 border border-blue-400 rounded-lg p-3 placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white" required>
+                            </div>
+                             <div class="mb-6">
+                                <label for="message" class="block mb-2 text-sm font-medium">Mensaje</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Comparte tus ideas y sugerencias" class="w-full bg-blue-400/50 border border-blue-400 rounded-lg p-3 placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-accent hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <h4 class="text-xl font-bold">Junta de Vecinos Colinas del Arroyo II</h4>
+            <p class="text-gray-400 mt-2 mb-6">"Vivir juntos, crecer unidos"</p>
+            <p class="text-xs text-gray-500">Creado por Ovalley Group 2025. Todos los derechos reservados, prohibida su reproducción total o parcial.</p>
+            <a href="https://wa.me/18295341802" target="_blank" class="text-xs text-gray-400 hover:text-white mt-2 inline-block">Contáctanos por WhatsApp al +1 (829) 534-1802</a>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu on link click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // WhatsApp form handler
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const phone = '18295341802'; // WhatsApp number without '+' or spaces
+
+            // Construct the message for WhatsApp
+            const whatsappMessage = `Hola, mi nombre es ${name}.\nMi correo es: ${email}.\n\nMensaje:\n${message}`;
+            
+            // Create the WhatsApp URL
+            const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(whatsappMessage)}`;
+
+            // Open WhatsApp in a new tab
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+</body>
+</html>
