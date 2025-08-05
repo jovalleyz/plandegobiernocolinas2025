@@ -817,12 +817,16 @@
             <div id="gemini-chat-messages" class="flex-1 p-4 overflow-y-auto space-y-4">
                  <!-- Chat messages will be appended here -->
             </div>
-            <div class="p-4 border-t border-gray-200 text-center">
-                 <button id="gemini-mic-btn" class="bg-accent hover:bg-orange-600 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg mx-auto transition-colors">
-                    <i data-lucide="mic"></i>
+            <form id="gemini-input-form" class="p-2 border-t border-gray-200 flex items-center gap-2">
+                <input type="text" id="gemini-text-input" class="flex-1 border border-gray-300 rounded-full py-2 px-4 focus:outline-none focus:ring-2 focus:ring-main text-sm" placeholder="Escribe tu pregunta...">
+                <button type="submit" id="gemini-send-btn" class="bg-main hover:bg-blue-700 text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="send" class="w-5 h-5"></i>
                 </button>
-                <p id="gemini-status" class="text-xs text-gray-500 mt-2">Toca para hablar</p>
-            </div>
+                <button type="button" id="gemini-mic-btn" class="bg-accent hover:bg-orange-600 text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="mic" class="w-5 h-5"></i>
+                </button>
+            </form>
+             <p id="gemini-status" class="text-xs text-gray-500 text-center pb-2">Toca el micrófono para hablar</p>
         </div>
     </div>
 
@@ -913,10 +917,25 @@
         const geminiMicBtn = document.getElementById('gemini-mic-btn');
         const geminiStatus = document.getElementById('gemini-status');
         const geminiChatMessages = document.getElementById('gemini-chat-messages');
+        const geminiInputForm = document.getElementById('gemini-input-form');
+        const geminiTextInput = document.getElementById('gemini-text-input');
 
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
         let recognition;
         let isRecording = false;
+        let selectedVoice;
+
+        function loadVoices() {
+            const voices = speechSynthesis.getVoices();
+            selectedVoice = voices.find(voice => voice.lang === 'es-US' || voice.lang === 'es-MX');
+            if (!selectedVoice) {
+                selectedVoice = voices.find(voice => voice.lang.startsWith('es-'));
+            }
+        }
+
+        speechSynthesis.onvoiceschanged = loadVoices;
+        loadVoices();
+
 
         if (SpeechRecognition) {
             recognition = new SpeechRecognition();
@@ -933,7 +952,7 @@
 
             recognition.onend = () => {
                 isRecording = false;
-                geminiStatus.textContent = 'Toca para hablar';
+                geminiStatus.textContent = 'Toca el micrófono para hablar';
                 geminiMicBtn.classList.add('bg-accent', 'hover:bg-orange-600');
                 geminiMicBtn.classList.remove('bg-red-500');
             };
@@ -964,6 +983,17 @@
             }
         });
 
+        geminiInputForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const query = geminiTextInput.value.trim();
+            if (query) {
+                addMessage(query, 'user');
+                sendQueryToGemini(query);
+                geminiTextInput.value = '';
+            }
+        });
+
+
         function addMessage(text, sender) {
             const bubble = document.createElement('div');
             bubble.classList.add('p-3', 'rounded-lg', 'max-w-xs', 'break-words');
@@ -979,7 +1009,10 @@
 
         function speak(text) {
             const utterance = new SpeechSynthesisUtterance(text);
-            utterance.lang = 'es-ES';
+            if (selectedVoice) {
+                utterance.voice = selectedVoice;
+            }
+            utterance.lang = 'es-US'; 
             speechSynthesis.speak(utterance);
         }
         
@@ -1014,7 +1047,7 @@
             
             let chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
             const payload = { contents: chatHistory };
-            const apiKey = "AIzaSyBAnCge043U5U8CY-a4us65-0U0T6uCNnc"; 
+            const apiKey = ""; 
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
             try {
