@@ -923,9 +923,7 @@
 
         function loadVoices() {
             const voices = speechSynthesis.getVoices();
-            selectedVoice = voices.find(voice => voice.lang === 'es-US' || voice.lang === 'es-MX');
-            if (!selectedVoice) {
-                selectedVoice = voices.find(voice => voice.lang.startsWith('es-'));
+            selectedVoice = voices.find(voice => voice.lang === 'es-US');
             }
         }
 
