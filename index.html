@@ -1043,7 +1043,7 @@
 
         async function sendQueryToGemini(query) {
             addMessage("Pensando...", "bot");
-            const prompt = `Basado estrictamente en el siguiente contexto del plan de gobierno de Colinas del Arroyo II, responde a la pregunta del usuario de forma clara y concisa. Si la respuesta no está en el texto, indica que no tienes esa información. CONTEXTO: ${planDeGobiernoContexto}. PREGUNTA: ${query}`;
+            const prompt = `Basado estrictamente en el siguiente contexto del plan de gobierno de Colinas del Arroyo II, responde a la pregunta del usuario de forma muy breve y resumida. La respuesta debe estar lista para ser leída en voz alta, por lo que no debe incluir símbolos como '/' o '*' y los números deben estar en un formato fácil de leer (por ejemplo, 'tres mil' en lugar de '3000'). Si la respuesta no está en el texto, indica que no tienes esa información. CONTEXTO: ${planDeGobiernoContexto}. PREGUNTA: ${query}`;
             
             let chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
             const payload = { contents: chatHistory };
